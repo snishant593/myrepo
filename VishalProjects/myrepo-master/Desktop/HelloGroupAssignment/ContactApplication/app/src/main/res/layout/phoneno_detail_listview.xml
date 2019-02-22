@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <ImageView
+        android:id="@+id/callimageview"
+        android:layout_width="54dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/phone"
+        app:layout_constraintEnd_toStartOf="@+id/phoneno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/phoneno"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginTop="6dp"
+        android:gravity="fill_vertical"
+        android:text="phone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/callimageview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/smsimageview"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/sms"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phoneno" />
+
+
+</android.support.constraint.ConstraintLayout>

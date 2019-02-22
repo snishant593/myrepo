@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="contactlistviewmodel"
+            type="com.example.shilpa.contactapplication.mvvm.viewmodel.ContactListViewmodel"/>
+
+
+    </data>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        tools:layout_editor_absoluteY="81dp">
+
+
+        <ImageView
+            android:id="@+id/circleView"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/phoneno"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="17dp"
+            android:text="@{contactlistviewmodel.phoneno}"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/name"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="16dp"
+            android:text="@{contactlistviewmodel.name}"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/circleView"
+            app:layout_constraintTop_toBottomOf="@+id/phoneno" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

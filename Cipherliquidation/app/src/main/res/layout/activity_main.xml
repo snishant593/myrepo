@@ -1,0 +1,216 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100.0"
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout1"
+        android:visibility="invisible"
+        android:weightSum="1.0"
+        android:paddingTop="50dp"
+        android:paddingBottom="220dp"
+
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingRight="5dp"
+            >
+
+
+            <TextView
+                android:id="@+id/disc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.4"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:text="Scan Barcode"
+                android:textColor="#000000"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+
+                android:id="@+id/barcodescan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="text"
+                android:layout_weight="0.6"
+                android:textColor="#000000"
+                android:hint="Scan barcode here"
+
+                android:textSize="30px"
+                android:ems="10"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style"
+                android:imeOptions="flagNoExtractUi"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="5dp"
+            android:layout_weight="1.0"
+            >
+
+
+            <Button
+                android:id="@+id/ENTER"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="260dp"
+                android:text="Enter"
+                android:textColor="#000000"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            >
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Offers"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:id="@+id/disc2"
+                android:textSize="@dimen/textsize"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                />
+
+            <TextView
+
+                android:id="@+id/offersdisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="text"
+                android:layout_weight="0.6"
+                android:textColor="#000000"
+
+                android:textSize="30px"
+                android:ems="10"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style"
+                android:imeOptions="flagNoExtractUi"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:paddingRight="5dp"
+            android:paddingTop="30dp"
+            >
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Total Count"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:id="@+id/disc9"
+                android:textSize="@dimen/textsize"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                />
+
+            <TextView
+
+                android:id="@+id/totalcount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="text"
+                android:layout_weight="0.6"
+                android:textColor="#000000"
+
+                android:textSize="30px"
+                android:ems="10"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/border_style"
+                android:imeOptions="flagNoExtractUi"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:visibility="visible"
+
+
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:text="EXIT"
+            android:textColor="#000000"
+            android:textSize="@dimen/textsize" />
+
+
+        <Button
+            android:id="@+id/importcsv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:text="Import Csv File"
+            android:textColor="#000000"
+            android:textSize="@dimen/textsize" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
